@@ -1,6 +1,6 @@
 # artdav
 
-A new Flutter project.
+v.0.1
 
 ## Getting Started
 
