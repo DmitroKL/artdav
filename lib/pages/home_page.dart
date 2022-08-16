@@ -1,5 +1,9 @@
 
+//import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+
+import '../value_calk.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -90,6 +94,7 @@ class HomePg extends State<HomePage>{
                           alignment: Alignment.bottomCenter,
 
                           child:
+/*
                           TextFormField(
                             validator: (value){
                               if (value == null || value.isEmpty) {
@@ -98,25 +103,44 @@ class HomePg extends State<HomePage>{
                               return null;
                             },
                           ),
+*/
 
-                          /*
                           TextField(
                             decoration: const InputDecoration(
                               hintText: "_____",
                             ),
                             onSubmitted: (text) {
 
-                            //  PassProverca.b = text;
+                              if (text == null || text.isEmpty) {
+                                showDialog(
+                                    context: context,
+                                    builder: (context){
+                                      return const AlertDialog(
+                                        content:  Text('Пустая строка'),
+                                      );
+                                    });
+                              }
+/*
+                              else if( text == [1,2,3] ){
+                                print('1 2 3');
+                              }
+*/
+                              else{
+                              age = text;
+                              }
+
+                             // age=text;
+                             // print(age);
 
                             },
                             textAlign: TextAlign.center,
                             style: const TextStyle(
-                              //fontSize: 25,
-                            //  fontWeight: FontWeight.w500,
+                              fontSize: 23,
+                              fontWeight: FontWeight.w500,
                               letterSpacing: 1,
                             ),
                           ),
-*/
+
 
 
                         )
@@ -159,6 +183,7 @@ class HomePg extends State<HomePage>{
                             onChanged: (SingingCharacter? value) {
                               setState(() {
                                 _character = value;
+                                print(_character);
                               });
                             },
                           ),
@@ -227,7 +252,7 @@ class HomePg extends State<HomePage>{
                                     height: 45.0,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10.0),
-                                        gradient: LinearGradient(colors: [
+                                        gradient: const LinearGradient(colors: [
                                           Colors.cyanAccent,
                                           Colors.indigo
                                         ]
@@ -273,7 +298,7 @@ class HomePg extends State<HomePage>{
                                     height: 45.0,
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(10.0),
-                                        gradient: LinearGradient(colors: [
+                                        gradient: const LinearGradient(colors: [
                                           Colors.cyanAccent,
                                           Colors.indigo
                                         ]
@@ -314,7 +339,7 @@ class HomePg extends State<HomePage>{
                     height: 45.0,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
-                        gradient: LinearGradient(colors: [
+                        gradient: const LinearGradient(colors: [
                           Colors.deepPurpleAccent,
                           Colors.indigo
                         ]
@@ -322,9 +347,61 @@ class HomePg extends State<HomePage>{
                     ),
                     alignment: Alignment.center,
                     child: TextButton(
+
                       onPressed: ()
                       {
+                        if(good == art0.contains(age) ) {
+                          print('совпало 1-10');
+                        }
 
+                        else{
+                          print('ne sovpalo');
+                        }
+
+
+                      //  var ager = int.parse(age);
+                      //  print(ager);
+
+
+
+
+      /*
+ //
+                              if ( ager >=1 && ager <=100 ) {
+                                showDialog(
+                                    context: context,
+                                    builder: (context){
+                                      return AlertDialog(
+                                        content: Text('ввели ot 1 do 100'),
+                                      );
+                                    });
+                              }
+
+                              else if ( ager != int ){
+                                showDialog(
+                                    context: context,
+                                    builder: (context){
+                                      return AlertDialog(
+                                        content: Text('не цыфра'),
+                                      );
+                                    });
+                              }
+
+                              else{
+                                print('proverka');
+                                showDialog(
+                                    context: context,
+                                    builder: (context){
+                                      return AlertDialog(
+                                        content: Text('что то дугое кроме 1 до 100'),
+                                      );
+                                    });
+                                }
+//
+          */
+
+
+                             // ager=0; //типа убирает ввод
                       },
 
                       child: const Text(
@@ -342,9 +419,7 @@ class HomePg extends State<HomePage>{
               )
 
 
-
           ),
-
 
 
         ],
