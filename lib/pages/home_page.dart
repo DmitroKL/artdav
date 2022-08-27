@@ -281,6 +281,7 @@ class HomePg extends State<HomePage>{
                                 ],
                               ),
 
+
                               Column(          //right
                                 children: [
                                   Container(
@@ -364,7 +365,6 @@ class HomePg extends State<HomePage>{
                               print('низкое даление М от 1-10');
                             }
                           }
-
                           else{
                             print('man ne sovpalo');
                           }
