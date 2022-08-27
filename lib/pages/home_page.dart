@@ -281,7 +281,6 @@ class HomePg extends State<HomePage>{
                                 ],
                               ),
 
-
                               Column(          //right
                                 children: [
                                   Container(
