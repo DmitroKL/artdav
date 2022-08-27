@@ -1,9 +1,14 @@
 
- var age ;
+//too
+var age ;
+var sys;
+var dia;
+
+
 var good = true;
 // var ager = 0;
 // var ager = int.parse(age) ;
- //var ret = 'Введите ваш возраст' ;
+//var ret = 'Введите ваш возраст' ;
 
 
 

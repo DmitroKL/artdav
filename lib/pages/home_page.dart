@@ -126,11 +126,11 @@ class HomePg extends State<HomePage>{
                               }
 */
                               else{
-                              age = text;
+                                age = text;
                               }
 
-                             // age=text;
-                             // print(age);
+                              // age=text;
+                              // print(age);
 
                             },
                             textAlign: TextAlign.center,
@@ -232,7 +232,7 @@ class HomePg extends State<HomePage>{
                               fontSize: 30,
                             ),),
                         ),
-                        Container(                          //2 polka
+                        Container(                   //2 polka
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -265,7 +265,7 @@ class HomePg extends State<HomePage>{
                                         hintText: "SYS",
                                       ),
                                       onSubmitted: (text) {
-
+                                        sys = text;
                                         //  PassProverca.b = text;
 
                                       },
@@ -311,7 +311,7 @@ class HomePg extends State<HomePage>{
                                         hintText: "DIA",
                                       ),
                                       onSubmitted: (text) {
-
+                                        dia = text;
                                         //  PassProverca.b = text;
 
                                       },
@@ -350,6 +350,41 @@ class HomePg extends State<HomePage>{
 
                       onPressed: ()
                       {
+                        if (_character == SingingCharacter.man ){
+                          print('man select');
+                          if(good == art0.contains(age) ) {
+                            print('man совпало 1-10');
+                            if( sys == '103' && dia == '69'){
+                              print('нормальное давление М от1-10');
+                            }
+
+                            else if(sys > '103' && dia > '69'){
+                              print('высокое давление М от 1-10');
+                            }
+                            else {
+                              print('низкое даление М от 1-10');
+                            }
+                          }
+
+                          else{
+                            print('man ne sovpalo');
+                          }
+                        }
+                        else{
+                          print('girl select');
+                          if(good == art0.contains(age) ) {
+                            print('girl совпало 1-10');
+                          }
+
+                          else{
+                            print('girl ne sovpalo');
+                          }
+                        }
+
+
+
+                        /* // работает с таблиц
+                      {
                         if(good == art0.contains(age) ) {
                           print('совпало 1-10');
                         }
@@ -358,14 +393,16 @@ class HomePg extends State<HomePage>{
                           print('ne sovpalo');
                         }
 
-
-                      //  var ager = int.parse(age);
-                      //  print(ager);
+*/
 
 
+                        //  var ager = int.parse(age);
+                        //  print(ager);
 
 
-      /*
+
+
+                        /*
  //
                               if ( ager >=1 && ager <=100 ) {
                                 showDialog(
@@ -401,7 +438,7 @@ class HomePg extends State<HomePage>{
           */
 
 
-                             // ager=0; //типа убирает ввод
+                        // ager=0; //типа убирает ввод
                       },
 
                       child: const Text(
