@@ -357,8 +357,8 @@ class HomePg extends State<HomePage>{
                             if( sys == '103' && dia == '69'){
                               print('нормальное давление М от1-10');
                             }
-
-                            else if(sys > '103' && dia > '69'){
+                          // перевести в число и проверить
+                            else if(sysa > 103 && diaa > 69){
                               print('высокое давление М от 1-10');
                             }
                             else {

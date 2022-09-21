@@ -6,8 +6,10 @@ var dia;
 
 
 var good = true;
+var sysa = int.parse(sys);
+var diaa = int.parse(dia);
 // var ager = 0;
-// var ager = int.parse(age) ;
+// var ager = int.parse(age) ; //перевод в число
 //var ret = 'Введите ваш возраст' ;
 
 
